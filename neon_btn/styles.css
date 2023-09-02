@@ -1,0 +1,146 @@
+
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #123;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    }
+    
+    a {
+    text-decoration: none;
+    font-family: consolas;
+    font-size: 25px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 20px 30px;
+    color: #35e97a;
+    transition: .2s;
+    overflow: hidden;
+    transition: translatex(-20px);
+    
+    }
+    /*Post click effect of the link. Notice how it changes red.*/
+    a:focus {
+    transition-delay: 1;
+    color: #123;
+    background: #fa142b;
+    box-shadow: 0 0 30px  #fa142b, 0 0 60px #fa142b, 0 0 90px  #fa142b;
+    font-weight: bold;
+    
+    }
+    a:hover {
+    background: #19e1de;
+    box-shadow: 0 0 10px #19e1de, 0 0 40px #19e1de, 0 0 80px #19e1de;
+    color: #123;
+    font-weight: bold;
+    }
+    
+    
+    a span {
+    display: block;
+    position: absolute;
+    }
+    
+    
+    a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #19e1de);
+    }
+    
+    a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s; 
+    }
+    /*Focus Added*/
+    
+    a:focus span:nth-child(1) {
+    left: 100%;
+    height: 5px;
+    transition: 1s;
+      background: linear-gradient(90deg, transparent, #fa142b);
+    }
+    
+    
+    a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #19e1de);
+    }
+    
+    a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: .5s; 
+    }
+    a:focus span:nth-child(3) {
+    right: 100%;
+    height: 5px;
+    transition: 1s;
+    transition-delay: .5s; 
+    background: linear-gradient(270deg, transparent, #fa142b);
+    }
+      
+    a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #19e1de);
+    }
+    
+    
+    a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: .25s;
+    }
+    
+    a:focus span:nth-child(2) {
+    top: 100%;
+    width: 5px;
+    transition: 1s;
+    transition-delay: .25s; 
+    background: linear-gradient(180deg, transparent, #fa142b);
+    }
+    
+     
+    a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #19e1de);
+    }
+    
+    a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: .75s;
+    } 
+    
+    a:focus span:nth-child(4) {
+    bottom: 100%;
+    width: 5px;
+    transition: 1s;
+    transition-delay: .75s; 
+    background: linear-gradient(360deg, transparent, #fa142b);
+    }
+    
+    
+    
+    
+    
+    
