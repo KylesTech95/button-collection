@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #125;
+  font-family: sans-serif;
+  
+  }
+  
+  a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #1990f0;
+  padding:30px 60px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 20px 50px rgba(0,0,0,.5);
+  overflow: hidden;
+  
+  }
+  a:before {
+  contenet: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 50%;
+  background: rgba(255,255,255,0.05);
+  }
+  a:hover {
+  text-shadow: 0px 0px  8px #1990f0;
+  animation: fontUp 1s ease-in-out reverse;
+  }
+  @keyframes fontUp {
+    0% {
+      font-size: 30px;
+  letter-spacing: 2px;
+    }
+    100% {
+  font-size: 35px;
+  letter-spacing: 3px;
+  text-shadow: 0px 0px  8px ghostWhite;
+  color: #fff;
+  opacity: .2;
+  }
+  
+  }
+  a:focus {
+  text-shadow: none;
+  }
+  
+  a span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, red, #1770ff);
+  animation: 2s left2right linear infinite;
+  }
+  @keyframes left2right {
+    0% {
+  transform: translateX(-100%);
+  }
+    100% {
+  transform: translateX(100%);
+  }
+  }
+  
+  a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, red, #1770ff);
+  animation: 2s top2bottom linear infinite;
+  animation-delay: 1s;
+  
+  }
+  @keyframes top2bottom {
+    0% {
+  transform: translateY(-100%);
+  }
+    100% {
+  transform: translateY(100%);
+  }
+  }
+  
+  a span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, red, #1770ff);
+  animation: 2s right2left linear infinite;
+  
+  }
+  @keyframes right2left {
+    0% {
+  transform: translateX(100%);
+  }
+    100% {
+  transform: translateX(-100%);
+  }
+  }
+  
+  a span:nth-child(4) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, red, #1770ff);
+  animation: 2s bottom2top linear infinite;
+  animation-delay: 1s;
+  
+  }
+  @keyframes bottom2top {
+    0% {
+  transform: translateY(100%);
+  }
+    100% {
+  transform: translateY(-100%);
+  }
+  }
